@@ -1,133 +1,88 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>Anna's Portfolio</title>
-  </head>
+    <!-- head element -->
+    <head>
 
-  <body>
-    <!-- Header Section -->
-    <header>
-      <h1>
-        <a href="/">Anna's Portfolio</a>
-      </h1>
-      <!-- Start of Navigation -->
-      <nav>
-        <ul>
-          <li>
-            <a href="#about-me">About Me</a>
-          </li>
-          <li>
-            <a href="#work">Work</a>
-          </li>
-          <li>
-            <a href="#contact-me">Contact Me</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- End of Navigation Section -->
-    <!-- End of Header Section -->
+        <!-- metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Start of Hero Section -->
-    <section class="hero">
-        <h2>Full-Stack Website Development Student</h2>
-    </section>
-    <!-- End of Hero Section -->
+        <!-- import reset.css -->
+        <link rel="stylesheet" href="./Assets/reset.css">
 
-    <!-- Start of "About Me" Section -->
-    <section id="about-me" class="section">
-        <!-- Section Title -->
-        <div class="section-title">
-            <h2>
-            About Me
-            </h2>
-        </div>
+        <!-- import stylesheet -->
+        <link rel="stylesheet" href="./Assets/style.css">
 
-        <!-- Section Content -->
-        <div class="flex-row">
-            <p>
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dicta tenetur, unde nesciunt modi voluptatum earum iusto nihil doloremque soluta, inventore laudantium pariatur rem beatae dolorem eum aliquid praesentium perferendis?
-            </p>
-        </div>
-    </section>
-    <!-- End of "About Me" Section -->
+        <!-- tab title -->
+        <title>Anna Kowalczyk</title>
+    </head>
 
-    <!-- Start of "Work" Section -->
-    <section id="work" class="section">
-        <!-- Section Title -->
-        <div class="section-title2">
-          <h2>
-            Work
-          </h2>
-        </div>
+    <!-- body element -->
+    <body>
+        <header>
+            <h1>Anna Kowalczyk</h1>
+            <nav>
+                <!-- TODO: Add links -->
+                <ul class="nav-list">
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#work">My Work</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <!-- Section Content -->
-        <div class="flex-row2">
-            <div class="Projects">
-                <div class="surf-report">
-                    <p>Surf Report</a><br/><font size="-0.5">MERN-Stack</font></p>
+        <div class="main-body-img"></div>
+        <main>
+            <h1 id="about-me">About Me</h1>
+            <section class="about-me-content">
+                <p>
+                    Hello! My name is Anna. I don't have any time management skills.
+                </p>
+                <p style="margin-top: 1em;"> <!-- simple margin-top style to create a line between first and second paragraph -->
+                    Beep beep
+                </p>
+            </section>
+            <h1 id="work">Work</h1>
+            <section class="work-content">
+                <div class="large-card">
+                    <h2>Surf Report</h2>
                 </div>
-            </div>
-                <div class="led-wall">
-                  <p>Music Visualizer</a><br/><font size="-0.5">node/loT</font></p>
+                <div class="small-card-one">
+                    <h2>LED Wall</h2>
                 </div>
-
-                <!-- Calculator-->
-                <div class="calculator">
-                    <p>Calculator<br/><font size="-0.5">React/Javascript/CSS</font></p>
+                <div class="small-card-two">
+                    <h2>Calculator</h2>
                 </div>
-
-                <!-- Pastel Puzzles -->
-                <div class="pastel-puzzles">
-                    <p>Pastel Puzzles<br/><font size="-0.5">MERN Stack</font></p>
+                <div class="small-card-three">
+                    <h2>Pastel Puzzles</h2>
                 </div>
-
-                <!-- Run Buddy -->
-                <div class="run-buddy">
-                    <p>Run Buddy<br/><font size="-0.5">HTML/CSS</font></p>
+                <div class="small-card-four">
+                    <h2>Run Buddy<h2>
                 </div>
-            </div>
-        </div>
-      </section>
-    <!-- End of "Work" Section -->
+            </section>
+            <!-- <p class="work-content">
+                Coming Soon
+            </p> -->
+            <h1 id="contact-me">Contact Me</h1>
+            <section class="contact-me-content">
+                <ul>
+                    <li><a href="tel:1234567890">123-456-7890</a></li>
+                    <li><a href="mailto:akowalczyk026@icloud.com">akowalczyk026@icloud.com</a></li>
+                    <li><a href="https://github.com/akowala">GitHub</a></li>
+                </ul>
+            </section>
+        </main>
 
-    <!-- Start of "Contact Me" Section -->
-    <section id="contact-me" class="section">
-        <!-- Section Title -->
-        <div class="section-title">
-          <h2>
-            Contact Me
-          </h2>
-        </div>
+        <footer>
+            <h1>Footer</h1>
+            <p>&copy; 2022</p>
+        </footer>
 
-        <!-- Section Content -->
-        <div class="flex-row">
-            <div class="phone">
-                <a href="tel:123-456-789">Call Me</a>
-            </div>
-
-            <div class="email">
-                <a href="mailto:testemail@gmail.com">Email Me</a>
-            </div>
-
-            <div class="linkedin">
-                <a href="https://www.linkedin.com/testemail/">LinkedIn</a>
-            </div>
-
-            <div class="github">
-                <a href="https://github.com/akowala">Github</a>
-            </div>
-      </div>
-      </section>
-    <!-- End of "Contact Me" Section -->
-
-    <!-- footer -->
-    <footer>
-      <h2>Made by Anna Kowalczyk</h2>
-    </footer>
-    <!-- footer end -->
-  </body>
+        <!--This will scroll the page back to the top when you hit the refresh button -->
+        <script>
+            location.replace('#');
+        </script>
+    </body>
 </html>

@@ -1,0 +1,319 @@
+:root {
+    --primary-color: #444444;
+    --primary-text-color: #CCCCCC;
+    --secondary-color: #58dab1;
+    --secondary-color-rgb: 255, 115, 0;
+    --secondary-text-color: #000000;
+    --accent-color: #e80ac0;
+    --border-accent-width: 5px;
+}
+
+body {
+    min-width: 650px;
+}
+
+
+
+ * {
+    scroll-behavior: smooth;
+}
+
+
+
+header {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    min-height: 100px;
+}
+
+
+header > * {
+    margin: auto 0;
+    padding: 20px;
+}
+
+
+header h1 {
+    color: var(--secondary-text-color);
+    font-size: 200%;
+    margin-left: 40px;
+}
+
+
+header nav {
+    float: right;
+    width: 20%;
+    min-width: 300px;
+    margin-right: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list li {
+    position: relative;
+    display: inline;
+    font-size: 80%;
+    font-weight: 900;
+}
+
+
+.nav-list li a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 450px) {
+    header {
+        align-items: center;
+    }
+    header h1 {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    header {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 250%;
+        text-align: center;
+        margin-left: inherit;
+    }
+
+    header nav {
+        margin-right: inherit;
+        width: 80%;
+    }
+    
+    .nav-list li {
+        font-size: 120%;
+    }
+}
+
+
+
+/* .main-body-img {
+    height: 400px;
+    width: 100%;
+    background-image: url("challenge_2_img_2.JPG");
+    background-size: cover;
+    background-position: left top -175px;
+} */
+
+main {
+    padding-top: 20px;
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    display: grid;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 1500px;
+    grid-template-areas: 
+    'about-me-header    about-me-content  '
+    'work-header        work-content      '
+    'work-header        work-content      '
+    'work-header        work-content      '
+    'work-header        work-content      '
+    'work-header        work-content      '
+    'work-header        work-content      '
+    'work-header        work-content      '
+    'contact-me-header  contact-me-content'
+    ;
+}
+
+
+
+main > * {
+    padding: 5px 10px;
+    margin: 20px 0;
+}
+
+main h1 {
+    border-right: var(--primary-text-color);
+    border-right-width: var(--border-accent-width);
+    border-right-style: solid;
+    margin-left: 50px;
+    text-align: right;
+    font-size: 240%;
+    width: 170px;
+}
+
+main section {
+    margin-right: 90px;
+    margin-left: 25px;
+}
+
+#about-me {
+    grid-area: about-me-header;
+}
+
+.about-me-content {
+    grid-area: about-me-content;
+}
+
+#work {
+    grid-area: work-header;
+}
+
+.work-content {
+    grid-area: work-content;
+    padding: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.work-content div {
+    border-width: var(--border-accent-width);
+    border-color: var(--secondary-color);
+    border-style: solid;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.work-content div::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: rgba(var(--secondary-color-rgb), 0);
+}
+
+.work-content div:hover::before {
+    background-color: rgba(var(--secondary-color-rgb), 0.3);
+    transition: all 0.5s ease-in-out;
+}
+
+.work-content div h2 {
+    font-size: 200%;
+    display: inline-block;
+    height: 40%;
+    width: 40%;
+    position: relative;
+    z-index: 10;
+    top: 40%;
+    text-align: center;
+    margin: auto;
+    padding: 10px 0;
+    background-color: var(--secondary-color);
+}
+
+.large-card {
+    background-image: url("challenge_2_img_1.JPG");
+    height: 53%;
+    width: 98%;
+}
+
+.work-content div[class^="small-card-"] {
+    height: 22%;
+    width: 48%;
+}
+
+.small-card-one {
+    background-image: url("challenge_2_img_2.JPG");
+}
+
+.small-card-two {
+    background-image: url("challenge_2_img_2.JPG");
+}
+
+.small-card-three {
+    background-image: url("challenge_2_img_1.JPG");
+}
+
+.small-card-four {
+    background-image: url("challenge_2_img_1.JPG");
+} 
+
+#contact-me {
+    grid-area: contact-me-header;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contact-me-content {
+    grid-area: contact-me-content;
+    margin: auto 0;
+}
+
+.contact-me-content ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.contact-me-content ul li {
+    padding: 20px;
+    font-size: 120%;
+}
+
+.contact-me-content ul li a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+
+     @media screen and (max-width: 700px) {
+    main {
+        min-height: 1200px;
+        display: flex;
+    }
+
+    main h1 {
+        display: flex;
+        justify-content: center;
+        border-right-width: none;
+        border-right-style: none;
+        text-align: center;
+        font-size: 240%;
+        width: auto;
+        border-bottom-color: var(--primary-text-color);
+        border-bottom-width: var(--border-accent-width);
+        border-bottom-style: solid;
+
+    
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px; 
+        margin-bottom: 0px; 
+    } 
+
+     main section {
+        margin: 25px;
+    }
+
+    .about-me-content p {
+        font-size: 150%;
+    }
+
+    .work-content {
+        height: 500px;
+    }
+
+
+    #contact-me {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    
+    /* #contact-me {
+        margin-top: 20px;
+        margin-bottom: 0px;  */
