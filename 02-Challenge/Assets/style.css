@@ -1,7 +1,7 @@
 :root {
     --primary-color: #444444;
     --primary-text-color: #CCCCCC;
-    --secondary-color: #58dab1;
+    --secondary-color: #49a185;
     --secondary-color-rgb: 255, 115, 0;
     --secondary-text-color: #000000;
     --accent-color: #e80ac0;
@@ -104,13 +104,13 @@ header nav {
 
 
 
-/* .main-body-img {
+.main-body-img {
     height: 400px;
     width: 100%;
-    background-image: url("challenge_2_img_2.JPG");
+    background-image: url("sunflowers.jpg");
     background-size: cover;
     background-position: left top -175px;
-} */
+}
 
 main {
     padding-top: 20px;
@@ -217,7 +217,7 @@ main section {
 }
 
 .large-card {
-    background-image: url("challenge_2_img_1.JPG");
+    background-image: url("sunflowers.jpg");
     height: 53%;
     width: 98%;
 }
@@ -228,19 +228,19 @@ main section {
 }
 
 .small-card-one {
-    background-image: url("challenge_2_img_2.JPG");
+    background-image: url("daisy.jpg");
 }
 
 .small-card-two {
-    background-image: url("challenge_2_img_2.JPG");
+    background-image: url("tulips.jpg");
 }
 
 .small-card-three {
-    background-image: url("challenge_2_img_1.JPG");
+    background-image: url("roses.jpg");
 }
 
 .small-card-four {
-    background-image: url("challenge_2_img_1.JPG");
+    background-image: url("flowers.jpg");
 } 
 
 #contact-me {
@@ -313,7 +313,5 @@ main section {
         margin-top: 20px;
         margin-bottom: 0px;
     }
-    
-    /* #contact-me {
-        margin-top: 20px;
-        margin-bottom: 0px;  */
+
+}
