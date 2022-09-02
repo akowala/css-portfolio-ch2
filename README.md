@@ -7,9 +7,6 @@ In this challenge, we had to replicate a website to showcase a psuedo-portfolio.
 https://akowala.github.io/css-portfolio-ch2/
 ## Screenshot
 
-![Screenshot](Assets/website%201.png)
-![Screenshot](Assets/website%202.png)
-![Screenshot](Assets/website%203.png)
-
-
-
+![](02-Challenge/Assets/website%201.png)
+![](02-Challenge/Assets/website%202.png)
+![](02-Challenge/Assets/website%203.png)
