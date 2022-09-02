@@ -13,7 +13,7 @@ body {
 }
 
 
-
+/* scroll behavior set to smooth */
  * {
     scroll-behavior: smooth;
 }
@@ -63,13 +63,13 @@ header nav {
     font-weight: 900;
 }
 
-
+/* text in nav bar has a different color */
 .nav-list li a {
     color: var(--secondary-text-color);
     text-decoration: none;
 }
 
-
+/* resized media so it appears the correct way on various screens and devices */
 @media screen and (max-width: 450px) {
     header {
         align-items: center;
@@ -111,7 +111,7 @@ header nav {
     background-size: cover;
     background-position: left top -175px;
 }
-
+/* used mdn docs to look up grid layouts for CSS */
 main {
     padding-top: 20px;
     background-color: var(--primary-color);
@@ -186,7 +186,7 @@ main section {
 }
 
 .work-content div::before {
-    content: "";
+    content: "" ;
     display: block;
     position: absolute;
     height: 100%;
@@ -283,7 +283,7 @@ main section {
         border-right-width: none;
         border-right-style: none;
         text-align: center;
-        font-size: 240%;
+        font-size: 250%;
         width: auto;
         border-bottom-color: var(--primary-text-color);
         border-bottom-width: var(--border-accent-width);
@@ -301,7 +301,7 @@ main section {
     }
 
     .about-me-content p {
-        font-size: 150%;
+        font-size: 200%;
     }
 
     .work-content {
@@ -310,7 +310,7 @@ main section {
 
 
     #contact-me {
-        margin-top: 20px;
+        margin-top: 25x;
         margin-bottom: 0px;
     }
 
