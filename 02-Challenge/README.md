@@ -7,6 +7,9 @@ In this challenge, we had to replicate a website to showcase a psuedo-portfolio.
 
 ## Screenshot
 
-02-Challenge/Assets/website 1.jpg
-02-Challenge/Assets/website 2.jpg
-02-Challenge/Assets/website 3.jpg
+![Screenshot](Assets/website%201.png)
+![Screenshot](Assets/website%202.png)
+![Screenshot](Assets/website%203.png)
+
+
+
